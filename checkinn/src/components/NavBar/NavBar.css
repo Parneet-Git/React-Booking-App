@@ -1,0 +1,89 @@
+:root{
+    --normal-sans: 'Montserrat', sans-serif;
+    --curve-sans: 'Montserrat Alternates', sans-serif;
+    --shadow-font: 'Rampart One', cursive;
+    --rokkitt-times-new-roman: 'Rokkitt', serif;
+    --primary-color: rgb(10, 198, 198);
+}
+
+body{
+    min-height: 100vh;
+    /* This background will be for night mode */
+    /* background-color: #0d0a0b;
+        background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%); */
+
+    background-image: url('../../images/home-bg-light.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    /* linear gradient background color will come here */
+}
+
+.navbar .bi-caret-down-square-fill{
+    color: white;
+}
+
+.navbar .navbar-toggler{
+    transition: all 0.5s;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar a, .navbar a:focus{
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 0 2px rgb(115, 115, 115);
+    border-radius: 20px;
+}
+
+.navbar-nav a:hover{
+    color: black;
+    border-color: white;
+    background-color: white;
+    text-shadow: none;
+}
+
+.navbar-brand{
+    font-size: 1.5rem !important;
+    font-family: var(--shadow-font);
+}
+
+#home:hover > i{
+    position: relative;
+    animation: fade 0.8s infinite linear;
+    color: var(--primary-color);
+}
+
+#popular:hover > i{
+    animation: fade 1s infinite;
+    color: rgb(255, 196, 0);
+}
+
+#register:hover > i{
+    animation: fade 1s infinite;
+    color: var(--primary-color);
+}
+
+#sign-in:hover > i{
+    animation: fade 1s infinite;
+    color: var(--primary-color);
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
