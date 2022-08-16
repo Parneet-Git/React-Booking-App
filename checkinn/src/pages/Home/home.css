@@ -3,5 +3,7 @@
     --curve-sans: 'Montserrat Alternates', sans-serif;
     --shadow-font: 'Rampart One', cursive;
     --rokkitt-times-new-roman: 'Rokkitt', serif;
+    --light-primary-color: rgb(187, 255, 254);
     --primary-color: rgb(10, 198, 198);
+    --dark-primary-color: rgb(17, 171, 169);
 }
